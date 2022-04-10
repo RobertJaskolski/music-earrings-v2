@@ -1,6 +1,30 @@
 {
-  "name": "backend",
+  "name": "backend-music-earrings",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+  "main": "dist/index.js",
+  "repository": "https://github.com/RobertJaskolski/music-earrings-v2",
+  "author": "Robert Jaskólski <jaskolskirobert98@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-ts": "tsc",
+    "start": "npm run serve",
+    "serve": "node dist/index.js",
+    "watch-node": "nodemon dist/index.js",
+    "watch-ts": "tsc -w"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.23",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.12.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
+  }
 }
